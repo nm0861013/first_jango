@@ -1,0 +1,42 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "name": "Django",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/manage.py",
+            "args": [
+                "runserver",
+                "--noreload"
+            ],
+            "django": true
+        }
+    ]
+}
+
+// https://blog.csdn.net/liangpingguo/article/details/114575519
+
+// │  manage.py
+// │
+// └─mysite
+//         asgi.py
+//         settings.py
+//         urls.py
+//         wsgi.py
+//         __init__.py
+
+
+
+// django-admin startproject myproject
+// python manage.py startapp myapp
+// python manage.py runserver
+
+
+// conda activate django04 
+
+// python manage.py runserver --noreload
+
+// "python.pythonPath": "C:\\ProgramData\\Anaconda3\\envs\\django04\\python.exe",
+// Python: Select Interpreter

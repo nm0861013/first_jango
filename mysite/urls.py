@@ -1,4 +1,4 @@
-"""first_django URL Configuration
+"""mysite URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.1/topics/http/urls/
@@ -16,6 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from app01 import views
+
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    # path('admin/', admin.site.urls),
+    path('project/my_view/', views.my_view),
+    path('project/my_view2/', views.my_view2),
+    path('project/my_view3/', views.my_view3),
 ]
